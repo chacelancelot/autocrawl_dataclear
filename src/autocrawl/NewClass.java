@@ -18,13 +18,13 @@ import java.util.Set;
 public class NewClass {
     public static void main(String[] args) throws IOException, InterruptedException {
         AutoCrawler crawler = new AutoCrawler();
-        String FolderName = "file_url1";
+        String FolderName = "file_dll_4";
 
-        Scanner sc = new Scanner(new File("D:\\D_Documents\\Nam_4\\MMHNC\\Code\\AutoCrawl\\src\\data_uuid\\file_url.txt"));
+        Scanner sc = new Scanner(new File("D:\\D_Documents\\Nam_4\\MMHNC\\Code\\AutoCrawl\\src\\data_uuid\\file_dll_4.txt"));
         
         while(sc.hasNextLine())
             crawler.callCrawler(FolderName, sc.nextLine());
             
-        
+        System.out.println("well done!");
     }
 }
